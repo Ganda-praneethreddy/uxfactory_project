@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Events using HTML and CSS </title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="evo-calendar.min.css">
+  <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="hai">
+    <div id="calendar"></div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="evo-calendar.min.js"></script>
+  <script>$(document).ready(function () {
+      $('#calendar').evoCalendar({
+        calendarEvents: [
+          {
+            id: 'Event1', // Event's ID (required)
+            name: "New Year", // Event name (required)
+            date: "January/1/2021", // Event date (required)
+            description: "Set you goals high for this new year. Focus on your strengths and never give up until you get what you deserve. Happy new year!",
+            type: "holiday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event2', // Event's ID (required)
+            name: "FEMFEST2021", // Event name (required)
+            date: ["February/12/2021", "February/14/2021"], // Event date (required)
+            description: "Cultural Festival",
+            type: "holiday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event3', // Event's ID (required)
+            name: "1st Semester Exam", // Event name (required)
+            date: ["November/8/2021", "November/13/2021"], // Event date (required)
+            description: "1st Semester Exam",
+            type: "workingday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event4', // Event's ID (required)
+            name: "2nd Semester Exam", // Event name (required)
+            date: ["March/15/2021", "March/20/2021"], // Event date (required)
+            description: "2nd Semester Exam",
+            type: "workingday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event5', // Event's ID (required)
+            name: "Technosummit2021", // Event name (required)
+            date: ["July/12/2021", "July/14/2021"], // Event date (required)
+            description: "National Level Technical Event-For two days",
+            type: "Workingday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event6', // Event's ID (required)
+            name: "Sports", // Event name (required)
+            date: ["August/27/2021", "August/28/2021"], // Event date (required)
+            description: "To make our students more energetic and strong our college has made arrangement for games and sports. On a daily basis our students play in the ground provided near the hostels and also we have indoor game facilities like Table Tennis, caroms, etc. To make the academic session interesting, annual sports celebrations are held.",
+            type: "Workingday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            id: 'Event7', // Event's ID (required)
+            name: "Sports day", // Event name (required)
+            date: "August/29/2021", // Event date (required)
+            description: "On the sports day, flags are pitched in the college campus. All the students will be participating in different activities and faculties will be guiding them in organising various events. Every sports person wear their own house colour dress. Every year a famous sports person is invited as the chief guest to preside over the function. All the parents are also invited for the function,  Prizes will distribut for who got 1st & 2nd places  in indoor and outdoor events ",
+            type: "holiday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+          },
+          {
+            name: "Vacation Leave",
+            badge: "02/13 - 02/15", // Event badge (optional)
+            date: ["February/13/2020", "February/15/2020"], // Date range
+            description: "Vacation leave for 3 days.", // Event description (optional)
+            type: "event",
+            color: "#63d867" // Event custom color (optional)
+          }
+        ]
+
+
+      })
+    })</script>
+
+</body>
